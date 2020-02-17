@@ -1,0 +1,29 @@
+.block {
+	.attachment {
+		display: block;
+		.attachment-row {
+			display: flex;
+		  align-items: center;
+		  position: relative;
+		}
+		.inputs {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			clear: both;
+			.input {
+				width: calc(50% - 5px);
+			}
+			input {
+				margin-top: 0;
+			}
+		}
+		&.delete {
+			.inputs {
+				display: none;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,13 @@
+.exploratory-map {
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+	canvas.mapboxgl-canvas {
+		outline: none;
+	}
+	.mapboxgl-marker {
+		width: 10px;
+		height: 10px;
+		background: black;
+	}
+}

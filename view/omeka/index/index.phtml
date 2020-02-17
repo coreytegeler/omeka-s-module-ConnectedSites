@@ -1,0 +1,13 @@
+<?php
+$title = $this->setting('installation_title', 'Omeka S');
+echo $this->pageTitle($title);
+
+if ($sites):
+	echo '<ul>';
+		foreach ($sites as $site):
+			echo '<li>';
+    		echo $this->hyperlink($site->title(), $site->siteUrl());
+			echo '</li>';
+		endforeach;
+	echo '</ul>';
+endif;
